@@ -22,7 +22,7 @@ export const SESSIONS = [
 
   // Day 4
   { id: 'mgmt_perspective', label: 'Management Perspective',                instructor: 'Chief Ruiz',                         day: 4 },
-  { id: 'prob_ffs',         label: "Probationary FF's",                     instructor: 'Chris Fifield',                      day: 4 },
+  { id: 'prob_ffs',         label: "Probationary Firefighters",             instructor: 'Chris Fifield',                      day: 4 },
   { id: 'company_training', label: 'Company Training',                      instructor: 'Hagerman / Romo',                    day: 4 },
 ];
 
