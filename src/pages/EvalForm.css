@@ -1,0 +1,287 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f5f4;
+  color: #1c1917;
+  min-height: 100vh;
+}
+
+.ef-root {
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Header ────────────────────────────────────────────────────────────── */
+.ef-header {
+  background: #1e3a5f;
+  color: #fff;
+  padding: 32px 24px 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ef-header-badge {
+  background: #c8a84b;
+  color: #1e3a5f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+.ef-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+}
+
+.ef-subtitle {
+  font-size: 13px;
+  color: #93b4d4;
+  line-height: 1.4;
+}
+
+/* ─── Main ──────────────────────────────────────────────────────────────── */
+.ef-main { flex: 1; padding: 0 0 40px; }
+
+.ef-section {
+  padding: 24px;
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.ef-section-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1e3a5f;
+  margin-bottom: 18px;
+}
+
+/* ─── Fields ────────────────────────────────────────────────────────────── */
+.ef-field { margin-bottom: 16px; }
+
+.ef-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #44403c;
+  margin-bottom: 6px;
+}
+
+.ef-req { color: #c8a84b; }
+
+.ef-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d6d3d1;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1c1917;
+  background: #fff;
+  appearance: none;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+
+.ef-input:focus {
+  outline: none;
+  border-color: #1e3a5f;
+  box-shadow: 0 0 0 3px rgba(30,58,95,0.1);
+}
+
+.ef-instructor-badge {
+  display: inline-block;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #1e40af;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+/* ─── Scale ─────────────────────────────────────────────────────────────── */
+.ef-scale-legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #78716c;
+  margin-bottom: 20px;
+}
+
+.ef-question { margin-bottom: 24px; }
+
+.ef-q-text {
+  font-size: 14px;
+  color: #1c1917;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.ef-q-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: #a8a29e;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.ef-scale { display: flex; gap: 8px; }
+
+.ef-scale-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d6d3d1;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  color: #78716c;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.ef-scale-btn:hover { border-color: #1e3a5f; color: #1e3a5f; }
+.ef-scale-btn--active { background: #1e3a5f; border-color: #1e3a5f; color: #fff; }
+
+/* ─── Overall ───────────────────────────────────────────────────────────── */
+.ef-overall { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.ef-overall-btn {
+  flex: 1;
+  min-width: 56px;
+  padding: 12px 8px;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.ef-overall-btn:hover { border-color: #1e3a5f; }
+.ef-overall-btn--active { background: #eff6ff; border-color: #1e3a5f; }
+
+.ef-overall-num { font-size: 18px; font-weight: 700; color: #1c1917; }
+.ef-overall-star { font-size: 10px; color: #c8a84b; letter-spacing: 1px; }
+
+/* ─── Textarea ──────────────────────────────────────────────────────────── */
+.ef-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d6d3d1;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1c1917;
+  font-family: inherit;
+  resize: vertical;
+  line-height: 1.5;
+  transition: border-color 0.15s;
+}
+
+.ef-textarea:focus {
+  outline: none;
+  border-color: #1e3a5f;
+  box-shadow: 0 0 0 3px rgba(30,58,95,0.1);
+}
+
+/* ─── Submit ────────────────────────────────────────────────────────────── */
+.ef-submit {
+  display: block;
+  width: calc(100% - 48px);
+  margin: 24px 24px 0;
+  padding: 14px;
+  background: #1e3a5f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.ef-submit:hover:not(.ef-submit--disabled) { background: #16304f; }
+.ef-submit--disabled { background: #d6d3d1; color: #a8a29e; cursor: not-allowed; }
+.ef-submit--loading  { opacity: 0.7; cursor: wait; }
+
+.ef-hint {
+  text-align: center;
+  font-size: 12px;
+  color: #a8a29e;
+  margin-top: 10px;
+  padding: 0 24px;
+}
+
+.ef-error {
+  margin: 16px 24px 0;
+  padding: 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #dc2626;
+}
+
+/* ─── Footer ────────────────────────────────────────────────────────────── */
+.ef-footer {
+  text-align: center;
+  font-size: 11px;
+  color: #a8a29e;
+  padding: 20px 24px;
+  border-top: 1px solid #e7e5e4;
+  margin-top: 24px;
+}
+
+/* ─── Success ───────────────────────────────────────────────────────────── */
+.ef-success-root { justify-content: center; align-items: center; }
+
+.ef-success {
+  padding: 48px 32px;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+.ef-success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #1e3a5f;
+  color: #fff;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.ef-success-title { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+
+.ef-success-body {
+  font-size: 14px;
+  color: #78716c;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
